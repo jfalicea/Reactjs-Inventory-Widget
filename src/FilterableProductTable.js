@@ -6,7 +6,7 @@ class FilterableProductTable extends Component {  // if you destructure "compone
 
     render(){
         return(
-            <div class="col-sm-3">
+            <div className="col-sm-3">
                 <SearchBar />
                 <ProductTable />
             </div>
