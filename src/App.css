@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  border: orange 2px dotted;
+}
+
+.product-table{
+  border: green 1px solid;
+}
+
+.search-bar{
+  border: blue 1px solid;
+}
