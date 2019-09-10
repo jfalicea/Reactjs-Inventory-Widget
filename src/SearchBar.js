@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
 
-function SearchBar(props){
-    return(
-        <div className="search-bar">
-            <input type="text" placeholder="Search..." />
-            <div>
-                <input id="in-stock" type="checkbox" /> Only show products in stock
+class SearchBar extends Component {
+    constructor(){
+        super();
+        this.state = {}
+    }
+    render(){
+        return(
+            <div className="search-bar">
+                <input type="text" placeholder="Search..." />
+                <div>
+                    <input id="in-stock" type="checkbox" /> Only show products in stock
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default SearchBar
