@@ -29,11 +29,16 @@ function ProductTable(props){
         // Map through all the items on this type (ie.)
         tempProducts[key].forEach((product, i)=>{
             // console.log("inner loop", product)
-            rows.push(<ProductRow key={key+i}product={product} />) //push this element on the rows. 
+            if(product.name.includes(props.search)){
+            rows.push(<ProductRow key={key+i} product={product} />) //push this element on the rows. 
+            }
         })
     }
+    console.log("=====",props.search)
     
     // console.log("rows",rows)
+
+
 
     return(
         <div className="product-table">
